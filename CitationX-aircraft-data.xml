@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Stored properties for the DHC-6 Twin Otter -->
+
+<PropertyList>
+
+    <path>/consumables/fuel/tank[0]/level-lbs</path>
+    <path>/consumables/fuel/tank[1]/level-lbs</path>
+    <path>/consumables/fuel/tank[2]/level-lbs</path>
+    <path>/instrumentation/altimeter[0]/setting-hpa</path>
+    <path>/instrumentation/altimeter[1]/setting-hpa</path>
+    <path>/instrumentation/comm[0]/frequencies/selected-mhz</path>
+    <path>/instrumentation/comm[0]/frequencies/standby-mhz</path>
+    <path>/instrumentation/comm[1]/frequencies/selected-mhz</path>
+    <path>/instrumentation/comm[1]/frequencies/standby-mhz</path>
+    <path>/instrumentation/comm[0]/volume</path>
+    <path>/instrumentation/comm[1]/volume</path>
+    <!--path>/instrumentation/engine-instruments/fuel-qty-aft/indicated-fuelqty-lbs</path>
+    <path>/instrumentation/engine-instruments/fuel-qty-fwd/indicated-fuelqty-lbs</path-->
+    <path>autopilot/settings/heading-bug-deg</path>
+    <path>/instrumentation/nav[0]/frequencies/selected-mhz</path>
+    <path>/instrumentation/nav[0]/frequencies/standby-mhz</path>
+    <path>/instrumentation/nav[1]/frequencies/selected-mhz</path>
+    <path>/instrumentation/nav[1]/frequencies/standby-mhz</path>
+    <path>/instrumentation/nav[0]/radials/selected-deg</path>
+    <path>/instrumentation/nav[0]/volume</path>
+    <path>/instrumentation/nav[1]/radials/selected-deg</path>
+    <path>/instrumentation/nav[1]/volume</path>
+    <path>/instrumentation/adf[0]/frequencies/selected-khz</path>
+    <path>/instrumentation/adf[1]/frequencies/selected-khz</path>
+    <path>/instrumentation/adf[0]/volume-norm</path>
+    <path>/instrumentation/adf[1]/volume-norm</path>
+    <path>/instrumentation/transponder/id-code</path>
+    <path>/instrumentation/transponder/inputs/digit[0]</path>
+    <path>/instrumentation/transponder/inputs/digit[1]</path>
+    <path>/instrumentation/transponder/inputs/digit[2]</path>
+    <path>/instrumentation/transponder/inputs/digit[3]</path>
+    <path>/instrumentation/transponder/inputs/knob-mode</path>
+    <!--path>/sim/model/show-garmin-196</path>
+    <path>/sim/pilots/hide-copilot-cockpit-view</path>
+    <path>/sim/pilots/hide-pilot-cockpit-view</path>
+    <path>/sim/pilots/pilots-enabled</path>
+    <path>/sim/pilots/show-copilot</path>
+    <path>/sim/pilots/show-pilot</path>
+    <path>/sim/rendering/show-shadow</path-->
+    <path>/sim/weight[0]/weight-lb</path>
+    <path>/sim/weight[1]/weight-lb</path>
+    <path>/systems/electrical/batt-volts</path>
+</PropertyList>
