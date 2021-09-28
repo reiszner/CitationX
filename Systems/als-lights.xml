@@ -77,7 +77,7 @@
         </output>
     </logic>
 
-    <logic>
+    <!--logic>
         <name>ALS Lighting Landing</name>
         <input>
             <and>
@@ -131,7 +131,7 @@
         <output>
             <property>/sim/rendering/als-secondary-lights/use-taxi-light-ext</property>
         </output>
-    </logic>
+    </logic-->
 
     <filter>
         <name>Light Map Flood Red</name>

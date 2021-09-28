@@ -748,7 +748,7 @@ Started Oct 2005  Syd Adams
             <file>Aircraft/CitationX/Nasal/Electrical.nas</file>
             <file>Aircraft/CitationX/Nasal/flightdirector.nas</file>
             <file>Aircraft/CitationX/Nasal/WaypointSmoothing.nas</file>
-            <file>Aircraft/CitationX/Nasal/light-manager.nas</file>
+            <!--file>Aircraft/CitationX/Nasal/light-manager.nas</file-->
             <file>Aircraft/Generic/limits.nas</file>
         </citation>
         <dialogs>

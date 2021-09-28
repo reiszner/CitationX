@@ -129,9 +129,8 @@
         </offsets>
     </model>
 
-
     <model>
-    <name>cabin</name>
+        <name>cabin</name>
         <path>Aircraft/CitationX/Models/cabin.xml</path>
         <offsets>
             <x-m>0</x-m>
@@ -142,7 +141,7 @@
     </model>
 
     <model>
-    <name>flightdeck</name>
+        <name>flightdeck</name>
         <path>Aircraft/CitationX/Models/flightdeck.xml</path>
         <offsets>
             <x-m>-6.613</x-m>
@@ -153,8 +152,8 @@
     </model>
 
     <model>
-        <name>LandingLights</name>
-        <path>Aircraft/CitationX/Models/Lights/light-coneLR.xml</path>
+        <name>taxi-light</name>
+        <path>Aircraft/CitationX/Models/Lights/taxi-light.xml</path>
         <offsets>
             <x-m>0</x-m>
             <y-m>0</y-m>
@@ -162,21 +161,97 @@
         </offsets>
     </model>
 
-<!-- SurferTim-->
+    <model>
+        <name>nav-light-left</name>
+        <path>Aircraft/CitationX/Models/Lights/nav-light-left.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>nav-light-right</name>
+        <path>Aircraft/CitationX/Models/Lights/nav-light-right.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>nav-light-tail</name>
+        <path>Aircraft/CitationX/Models/Lights/nav-light-tail.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>strobe-light-left</name>
+        <path>Aircraft/CitationX/Models/Lights/strobe-light-left.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
+    </model>
+
+    <model>
+        <name>strobe-light-right</name>
+        <path>Aircraft/CitationX/Models/Lights/strobe-light-right.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
+    </model>
+
     <model>
         <name>landing-light-left</name>
         <path>Aircraft/CitationX/Models/Lights/landing-light-left.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
     </model>
 
     <model>
         <name>landing-light-right</name>
         <path>Aircraft/CitationX/Models/Lights/landing-light-right.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
     </model>
 
     <model>
-        <name>taxi-light-c</name>
-        <path>Aircraft/CitationX/Models/Lights/taxi-light.xml</path>
+        <name>beacon-light</name>
+        <path>Aircraft/CitationX/Models/Lights/beacon-light.xml</path>
+        <offsets>
+            <x-m>0</x-m>
+            <y-m>0</y-m>
+            <z-m>0</z-m>
+        </offsets>
     </model>
+
+<!-- not in use anymore -->
+    <animation>
+        <type>select</type>
+        <object-name>Taxi</object-name>
+        <object-name>Land1</object-name>
+        <object-name>Land2</object-name>
+        <object-name>Strb1</object-name>
+        <object-name>Strb2</object-name>
+        <object-name>Bcn1</object-name>
+        <object-name>Bcn2</object-name>
+    </animation>
 
     <animation>
         <type>range</type>
@@ -771,26 +846,9 @@
         <object-name>FUdamper</object-name>
         <object-name>frtshock</object-name>
         <object-name>Nosewheel</object-name>
+        <object-name>taxi-light</object-name>
         <property>controls/gear/steering</property>
         <factor>60</factor>
-        <center>
-            <x-m>-8.149</x-m>
-            <y-m>0</y-m>
-            <z-m>-1.593</z-m>
-        </center>
-        <axis>
-            <x>0</x>
-            <y>0</y>
-            <z>1</z>
-        </axis>
-    </animation>
-
-<!-- SurferTim -->
-    <animation>
-        <type>rotate</type>
-        <object-name>taxi-light-c</object-name>
-        <property>controls/gear/steering</property>
-        <factor>30</factor>
         <center>
             <x-m>-8.149</x-m>
             <y-m>0</y-m>
@@ -1123,7 +1181,7 @@
         </condition>
     </animation>
 
-    <animation>
+    <!--animation>
         <type>select</type>
         <object-name>Strb1</object-name>
         <condition>
@@ -1194,12 +1252,12 @@
         <offset>1.0</offset>
         <min>1.0</min>
         <max>500.0</max>
-    </animation>
+    </animation-->
 
 
     <animation>
         <type>select</type>
-        <object-name>Bcn1</object-name>
+        <!--object-name>Bcn1</object-name-->
         <object-name>redlamp.on</object-name>
         <condition>
             <greater-than>
@@ -1209,7 +1267,7 @@
         </condition>
     </animation>
 
-    <animation>
+    <!--animation>
         <type>translate</type>
         <object-name>Bcn1</object-name>
         <offset-m>1.704</offset-m>
@@ -1232,11 +1290,11 @@
         <offset>1.0</offset>
         <min>1.0</min>
         <max>500.0</max>
-    </animation>
+    </animation-->
 
     <animation>
         <type>select</type>
-        <object-name>Bcn2</object-name>
+        <!--object-name>Bcn2</object-name-->
         <object-name>redlamp.on</object-name>
         <condition>
             <greater-than>
@@ -1246,7 +1304,7 @@
         </condition>
     </animation>
 
-    <animation>
+    <!--animation>
         <type>translate</type>
         <object-name>Bcn2</object-name>
         <offset-m>9.486</offset-m>
@@ -1371,7 +1429,7 @@
         <two-sides type="bool">false</two-sides>
         <min>0.05</min>
         <max>5</max>
-    </animation>
+    </animation-->
 
     <animation>
         <name>shadeless</name>
