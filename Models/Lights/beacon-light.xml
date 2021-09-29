@@ -53,13 +53,18 @@
 <!-- Compositor light -->
 
     <light>
-        <name>beacon-light-top-c</name>
-        <type>point</type>
+        <name>beacon-light-top-up</name>
+        <type>spot</type>
         <position>
             <x-m> 8.705</x-m>
             <y-m> 0.000</y-m>
             <z-m> 3.790</z-m>
         </position>
+        <direction>
+            <x> 0.0</x>
+            <y> 0.0</y>
+            <z> 1.0</z>
+        </direction>
         <ambient>
             <r>0.8</r>
             <g>0.2</g>
@@ -83,20 +88,115 @@
         </dim-factor-->
         <attenuation>
             <c>1.00</c>
-            <l>0.99</l>
-            <q>0.90</q>
+            <l>0.75</l>
+            <q>0.50</q>
         </attenuation>
+        <spot-cutoff>89</spot-cutoff>
+        <spot-exponent>0.1</spot-exponent>
         <range-m>20</range-m>
     </light>
 
     <light>
-        <name>beacon-light-belly-c</name>
-        <type>point</type>
+        <name>beacon-light-top-down</name>
+        <type>spot</type>
+        <position>
+            <x-m> 8.705</x-m>
+            <y-m> 0.000</y-m>
+            <z-m> 3.790</z-m>
+        </position>
+        <direction>
+            <x> 0.0</x>
+            <y> 0.0</y>
+            <z>-1.0</z>
+        </direction>
+        <ambient>
+            <r>0.8</r>
+            <g>0.2</g>
+            <b>0.1</b>
+            <a>1.0</a>
+        </ambient>
+        <diffuse>
+            <r>0.8</r>
+            <g>0.2</g>
+            <b>0.1</b>
+            <a>1.0</a>
+        </diffuse>
+        <specular>
+            <r>0.8</r>
+            <g>0.2</g>
+            <b>0.1</b>
+            <a>1.0</a>
+        </specular>
+        <!--dim-factor>
+            <property>sim/multiplay/generic/float[8]</property>
+        </dim-factor-->
+        <attenuation>
+            <c>10.00</c>
+            <l>2.00</l>
+            <q>1.00</q>
+        </attenuation>
+        <spot-cutoff>89</spot-cutoff>
+        <spot-exponent>0.1</spot-exponent>
+        <range-m>20</range-m>
+    </light>
+
+    <light>
+        <name>beacon-light-belly-up</name>
+        <type>spot</type>
         <position>
             <x-m> 0.800</x-m>
             <y-m> 0.000</y-m>
             <z-m>-1.530</z-m>
         </position>
+        <direction>
+            <x> 0.0</x>
+            <y> 0.0</y>
+            <z> 1.0</z>
+        </direction>
+        <ambient>
+            <r>0.8</r>
+            <g>0.2</g>
+            <b>0.1</b>
+            <a>1.0</a>
+        </ambient>
+        <diffuse>
+            <r>0.8</r>
+            <g>0.2</g>
+            <b>0.1</b>
+            <a>1.0</a>
+        </diffuse>
+        <specular>
+            <r>0.8</r>
+            <g>0.2</g>
+            <b>0.1</b>
+            <a>1.0</a>
+        </specular>
+        <!--dim-factor>
+            <property>sim/multiplay/generic/float[8]</property>
+        </dim-factor-->
+        <attenuation>
+            <c>20.00</c>
+            <l>2.00</l>
+            <q>1.00</q>
+        </attenuation>
+        <spot-cutoff>89</spot-cutoff>
+        <spot-exponent>0.1</spot-exponent>
+        <range-m>20</range-m>
+    </light>
+
+    <light>
+        <name>beacon-light-belly-down</name>
+        <type>spot</type>
+        <position>
+            <x-m> 0.800</x-m>
+            <y-m> 0.000</y-m>
+            <z-m>-1.530</z-m>
+        </position>
+        <direction>
+            <x> 0.0</x>
+            <y> 0.0</y>
+            <z>-1.0</z>
+        </direction>
         <ambient>
             <r>0.8</r>
             <g>0.2</g>
@@ -120,9 +220,11 @@
         </dim-factor-->
         <attenuation>
             <c>1.00</c>
-            <l>0.99</l>
-            <q>0.90</q>
+            <l>0.75</l>
+            <q>0.50</q>
         </attenuation>
+        <spot-cutoff>89</spot-cutoff>
+        <spot-exponent>0.1</spot-exponent>
         <range-m>20</range-m>
     </light>
 
@@ -130,8 +232,10 @@
         <type>select</type>
         <object-name>beacon-light-top-p</object-name>
         <object-name>beacon-light-belly-p</object-name>
-        <object-name>beacon-light-top-c</object-name>
-        <object-name>beacon-light-belly-c</object-name>
+        <object-name>beacon-light-top-up</object-name>
+        <object-name>beacon-light-top-down</object-name>
+        <object-name>beacon-light-belly-up</object-name>
+        <object-name>beacon-light-belly-down</object-name>
         <condition>
             <property>sim/multiplay/generic/int[1]</property>
         </condition>
